@@ -1,0 +1,89 @@
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login Page</title>
+     
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+   <link rel="stylesheet" href="css/loginpage.css" />
+   <link rel="stylesheet" type="text/css" href="css/Loder.css">
+
+   </head>
+   
+   <body>
+      <div id="loader" class="loader"></div>
+      <div class="wrapper">
+         <div class="title">
+            Login Form
+         </div>
+          <form action="LoginChecker" method="post">
+            <div class="#">
+               <div class="radio-inputs">
+               <label class="radio" required>
+                   <input type="radio" name="type"  value="teacher">
+                 <span class="name">Faculty</span>
+               </label>
+               <label class="radio">
+                 <input type="radio" name="type" value="student">
+                 <span class="name">Student</span>
+               </label>
+                   <label class="radio">
+                 <input type="radio" name="type" value="admin">
+                 <span class="name">Admin</span>
+               </label>
+             </div>
+            </div>
+             <div class="field">
+               <input type="text" required name="username">
+               <label>Username</label>
+            </div>
+            <div class="field">
+               <input type="password" required name="password">
+               <label>Password</label>
+            </div>
+            <div class="content">
+               <div class="checkbox">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Remember me</label>
+               </div>
+               <div class="pass-link">
+                  <a href="ForgetPassword.html">Forgot password?</a>
+               </div>
+            </div>
+            <div class="field">
+               <input type="submit" value="Login">
+            </div>
+            
+         </form>
+          
+      </div>
+        <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+        if (message) {
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Something went wrong!"
+              });
+        }
+        
+    </script>
+     <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+   </body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SCSIT</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> 
+	 <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> 
+	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/Loder.css">
+        
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"> </script>
+        <script> 
+            $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); });
+        </script>
+       <style>
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 4}
+}
+</style> 
+           
+</head>
+<body>
+    
+    <div id="loader" class="loader"></div>
+
+    <div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
+		<div id="header"></div>
+            
+                             <div class="main-gallery">
+ 
+    
+
+                
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+
+                              <img src="images/pic1.jpg" style="width:100%">
+
+                            </div>
+
+                            <div class="mySlides fade">
+
+                              <img src="images/pic3.jpg" style="width:100%">
+
+                            </div>
+
+                            <div class="mySlides fade">
+
+                              <img src="images/pic6.jpg" style="width:100%">
+
+                            </div>
+                            <div class="mySlides fade">
+
+                              <img src="images/pic5.jpg" style="width:100%">
+
+                            </div><div class="mySlides fade">
+
+                              <img src="images/pic4.jpg" style="width:100%">
+
+                            </div>
+
+                            </div>
+                            <br>
+
+                            <div style="text-align:center">
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                            </div>
+
+                            <script>
+                            let slideIndex = 0;
+                            showSlides();
+
+                            function showSlides() {
+                              let i;
+                              let slides = document.getElementsByClassName("mySlides");
+                              let dots = document.getElementsByClassName("dot");
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                              }
+                              slideIndex++;
+                              if (slideIndex > slides.length) {slideIndex = 1}    
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                              setTimeout(showSlides, 2500); // Change image every 2 seconds
+                            }
+                            </script>
+		 
+		
+		<div class="page-heading">
+			<div class="container">
+				<h2>popular courses</h2>
+			</div>
+		</div>
+		<!-- Popular courses End -->
+		<div class="learn-courses">
+			<div class="container">
+				<div class="courses">
+					<div class="owl-one owl-carousel">
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="images/1670828134-1.png" alt="courses picture"></div>
+                                                        <br>
+                                                         <br>
+                                                          <br>
+								<a href="pdf/Course-Scheme-BCA.pdf" class="learn-desining-banner" itemprop="name">Bachelor Of Computer Application(BCA)</a>
+                                                                <br><div class="box-body" itemprop="description">
+		
+                                                                <p>Apply the knowledge and skills in the application of computer programming for problem solving & software development.</p>
+								<section itemprop="time">
+									<p><span>Duration:</span> 3 Years</p>
+									<p><span>Class Time:</span> 10am-2pm </p>
+									<p><span>Fee:</span> 2,60,000</p>
+								</section>
+							</div>
+						</div>
+
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap"  itemprop="image"><img src="images/MCA.jpeg" alt="courses picture"></div>
+                                                         <br>
+                                                         <br>
+                                                         
+                                                      <a href="pdf/Course-Scheme-MCA.pdf" class="learn-desining-banner" itemprop="name">Master of Computer Application [MCA]</a>
+                                                        <br>
+                                                        <br>
+                                                        <div class="box-body" itemprop="description">
+                                                            <div class ="CourseDescription">
+                                                                <br>
+                                                <br>
+                                              
+								<p>
+Apply knowledge of computer science and applications to solve real world problems.
+Use modern computing tools and techniques dexterously.</p>
+                                                                </div>
+                                                            <br>
+								<section itemprop="time">
+									<p><span>Duration:</span> 2 Years</p>
+									<p><span>Class Time:</span> 10am-2pm</p>
+									<p><span>Fee:</span> 4,00,000</p>
+								</section>
+							</div>
+						</div>
+
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap"  itemprop="image"><img src="images/Msc cs.png" alt="courses picture"></div>
+                                                                           <br>
+                                                <br>
+                                                
+								<a href="pdf/Course-Scheme-MSc-CS-IT.pdf" class="learn-desining-banner" itemprop="name">Master of Science (Computer Science)</a>
+						
+                                                       	<div class="box-body" itemprop="description">
+                                                            
+                                                            <br>
+                                                            <br>
+								<p>Understand both theoretical and practical concepts of computer science.
+Learn various programming languages ..</p>
+								<section itemprop="time">
+									<p><span>Duration:</span> 2 Years</p>
+									<p><span>Class Time:</span> 10am-2pm</p>
+									<p><span>Fee:</span> 1,00,000</p>
+								</section>
+							</div>
+						</div>
+
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap"  itemprop="image"><img src="images/MBA!.jpeg" alt="courses picture"></div>
+                                                        <br>
+                                                        <br>
+								<a href="pdf/Course-Scheme-MBA-CM.pdf" class="learn-desining-banner" itemprop="name">Master of Business Administration MBA (CM)</a>
+							<div class="box-body" itemprop="description">
+                                                            <br>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+								<p>Understanding the key concepts of Information Technology to improvise organizational performance..</p>
+								<section itemprop="time">
+									<p><span>Duration:</span> 2 Years</p>
+									<p><span>Class Time:</span> 11am-12pm</p>
+									<p><span>Fee:</span> 3,00,000</p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Learn courses End -->
+		<section class="whyUs-section">
+			<div class="container">
+				<div class="featured-points">
+					<ul>
+						<li><i class="fas fa-book"></i> Learning Enviorment For students</li>
+						<li><i class="fas fa-money-check-alt"></i> affordable fees</li>
+						<li><i class="fas fa-chalkboard-teacher"></i> experienced teachers</li>
+						<li> <i class="fas fa-desktop"></i>Laboratories</li>
+					</ul>
+				</div>
+				<div class="whyus-wrap">
+					<h1>why us?</h1>
+                                        <h2>Vision :</h2>
+					<p itemprop="description"> "To achieve excellent standards of quality education by keeping pace with rapidly changing technologies & create computer professionals of global standards with capabilities of accepting new challenges."</p>
+                                        <h2>Mission :</h2>
+                                        <p itemprop="description">To produce world-class professionals who have excellent analytical skills, communication skills, team building spirit and ability to work in cross cultural environment.</p>
+                                        <p itemprop="description">To produce international quality IT professionals, who can independently design,develop and implement computer applications.</p>
+                                        <p itemprop="description">Professionals who dedicate themselves to mankind, who are environment conscious, follow social norms and ethics.</p>
+                                        
+				</div>
+			</div>
+		</section>
+		<!-- Closed WhyUs section -->
+		
+		<section class="page-heading">
+			<div class="container">
+				<h2>upcomming events</h2>
+			</div>
+		</section>
+		<section class="events-section" itemprop="event" itemscope itemtype=" http://schema.org/Event">
+			<div class="container">
+				<div class="event-wrap">
+					<div class="img-wrap" itemprop="image">
+                                            <img src="images/campus-image.jpeg" alt="event images" height="700" width="500">
+                                            
+                                                
+					</div>
+					<div class="details">
+						<a href=""><h3 itemprop="name">Orientation Programme for new Students.</h3></a>
+						<p itemprop="description">"Join us for our dynamic New Student Orientation Program! Discover campus life, meet faculty, and access valuable resources to kickstart your college journey with confidence. Welcome to SCSIT – where your success begins!"</p>
+
+						<h5 itemprop="startDate"><i class="far fa-clock"></i> June 10,2024 | 11am</h5>
+						<h5 itemprop="location"><i class="fas fa-map-marker-alt"></i> SCSIT,DAVV Khandwa Road</h5>
+					</div>
+				</div>
+
+				<div class="event-wrap">
+					<div class="img-wrap" itemprop="image">
+						<img src="images/hachthon.jpeg" alt="event images" height="700" width="500">
+					</div>
+					<div class="details">
+						<a href=""><h3 itemprop="name">Hackthon Organised By Top Comapanies</h3></a>
+						<p itemprop="description">"Gear up for our Hackathon event at [College Name]! Dive into coding challenges, network with industry experts, and unleash your creativity. Don't miss this chance to innovate and win big prizes. Join us for an unforgettable experience!"</p>
+
+						<h5 itemprop="startDate"><i class="far fa-clock"></i> july 30,2024 | 2pm</h5>
+						<h5 itemprop="location"><i class="fas fa-map-marker-alt"></i>SCSIT,DAVV Khandwa Road </h5>
+					</div>
+				</div>
+			</div>
+		</section>
+                <br>
+		<!-- End of Events section -->
+		<section class="what-other-say">
+			
+			<div class="container">
+				<h4 class="article-subtitle">Our Recruiters & Partners</h4>
+				<h2 class="head">Placements</h2>
+				<div class="three owl-carousel owl-theme">
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/Yash_Jounwar-Cognam.jpg" alt="Person image">
+                                                                        
+									<figcaption>
+										<span itemprop="author">Yash Jounwar</span>
+										<div class="rateYo" itemprop="ratingValue"></div>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+							
+                                                                "Congratulations to our talented student,YASH JOUNWAR, for securing a prestigious placement at COGNAM through our campus recruitment program! We are thrilled to witness their hard work and dedication translate into such a rewarding opportunity. This achievement not only reflects their exceptional skills and knowledge but also highlights the effectiveness of our college's career development initiatives. We wish [Student Name] continued success as they embark on this exciting journey with [Company Name], representing the excellence of our institution in the professional world."
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/Esha_Shroff-FICO.jpg" alt="Person image">
+									<figcaption>
+                                                                           
+										<span itemprop="author">ESHA SHROFF</span>
+										<div class="rateYo" itemprop="ratingValue"></div>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									
+                                                                "Congratulations to our talented student, ESHA SHROFF, for securing a prestigious placement at FICO through our campus recruitment program! We are thrilled to witness their hard work and dedication translate into such a rewarding opportunity. This achievement not only reflects their exceptional skills and knowledge but also highlights the effectiveness of our college's career development initiatives. We wish [Student Name] continued success as they embark on this exciting journey with [Company Name], representing the excellence of our institution in the professional world."
+								</p>
+							</div>
+						</div>
+					</div>
+                                    <div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/mahendra.png" alt="Person image">
+									<figcaption>
+                                                                           
+										<span itemprop="author">MAHENDRA KAMDAR</span>
+										<div class="rateYo" itemprop="ratingValue"></div>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									
+                                                                "Congratulations to our talented student, MAHENDRA KAMDAR, for securing a prestigious placement at FICO through our campus recruitment program! We are thrilled to witness their hard work and dedication translate into such a rewarding opportunity. This achievement not only reflects their exceptional skills and knowledge but also highlights the effectiveness of our college's career development initiatives. We wish MAHENDRA KAMDAR continued success as they embark on this exciting journey with FICO, representing the excellence of our institution in the professional world."
+								</p>
+							</div>
+						</div>
+					</div>
+                                    <div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/deeraj.png" alt="Person image">
+									<figcaption>
+                                                                           
+										<span itemprop="author">DEERAJ BATANE</span>
+										<div class="rateYo" itemprop="ratingValue"></div>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									
+                                                                "Congratulations to our talented student, DEERAJ BATANE, for securing a prestigious placement at COGNAM through our campus recruitment program! We are thrilled to witness their hard work and dedication translate into such a rewarding opportunity. This achievement not only reflects their exceptional skills and knowledge but also highlights the effectiveness of our college's career development initiatives. We wish DEERAJ BATANE continued success as they embark on this exciting journey with COGNAM, representing the excellence of our institution in the professional world."
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+                    
+		</section>
+		<!-- End of Others talk -->
+               
+
+		
+		<!-- Latest News CLosed -->
+		<section class="query-section">
+			<div class="container">
+				<p>Any Queries? Ask us a question at<a href="Tel: +91 731-2470041/42/43"><i class="fas fa-phone"></i> Tel: +91 731-2470041/42/43</a></p>
+			</div>
+		</section>
+		<!-- End of Query Section -->
+		 
+                <div id="footer"></div>
+
+
+	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.rateyo.js"></script>
+	
+	<script type="text/javascript" src="js/custom.js"></script>
+        <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+</body>
+</html>

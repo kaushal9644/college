@@ -1,0 +1,151 @@
+.navbar {  
+  background-color: #024871 ; 
+  overflow: hidden; 
+}  
+  
+.navbar a {  
+  float: left; 
+  display: #0444b3; 
+  color: white;
+    font-size: 20px;
+  text-align: center;  
+  padding: 14px 16px;  
+  text-decoration: none; 
+}  
+  
+
+.navbar a:hover {  
+  background-color: #035C91;   
+  color: black;  
+} 
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  margin-top: 5px;
+  padding: 14px 16px;
+  background-color: inherit;
+  }
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #2596be;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #024871;
+  
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+form {
+  padding: 25px;
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+form h2 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+form label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+form input,
+form select {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #bfbfbf;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #9a9a9a;
+}
+
+
+.submit-btn {
+  margin-top: 30px;
+}
+
+.submit-btn input {
+  color: white;
+  border: none;
+  height: auto;
+  font-size: 16px;
+  padding: 13px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  background: #024871;
+  transition: 0.2s ease;
+}
+
+.submit-btn input:hover {
+  background: #179b81;
+}

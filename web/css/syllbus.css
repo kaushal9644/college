@@ -1,0 +1,156 @@
+
+.main-content-area {
+  display: flex;
+}
+.main-content-area * {
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.content-left {
+  width: 72%;
+  margin: 20px;
+  border-radius: 20px;
+  margin-right: 2rem;
+}
+.main-content-area .padding-border {
+  padding: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.content-right {
+  width: 28%;
+  right: 0;
+  margin: 1rem 0;
+}
+.primary-container .sticky {
+  position: fixed;
+  top: 0;
+  width: 30%;
+}
+.content-left h1 {
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+}
+.content-left h2 {
+  font-size: 20px;
+}
+.content-left p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+/* content links  */
+.content-left .content-link {
+  color: #0984e3;
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.content-left .content-link:hover {
+  color: #6c5ce7;
+}
+.content-left .content-link:visited {
+  /* color: #ff7675;` */
+}
+.content-left h1 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+.content-left h2 {
+  color: #454545;
+  padding: 5px 0;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.content-left li,
+.content-left ul {
+  list-style: disc;
+}
+.content-left hr {
+  margin: 5px 0;
+  /* margin: 20px; */
+}
+.content-right h1 {
+  font-size: 22px;
+  color: #343434;
+  margin: 20px 0;
+}
+
+.main-content-area .content-right {
+  margin-top: 80px;
+}
+.content-right .sidebar-content {
+  margin-top: 20px;
+}
+.content-right span {
+  padding: 10px;
+  color: #555;
+  font-size: 12px;
+}
+.content-right li {
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  color: #13448a;
+  margin: 5px;
+}
+.content-right li:hover {
+  color: black;
+  letter-spacing: 1px;
+}
+
+
+.skid {
+    background-color: #f1f5fd;
+    border-radius: 10px;
+    padding: 3px;
+    color: #343434;
+}
+
+.skid:hover {
+    color: #121212;
+}
+        
+        .collapsible {
+            background-color: #efebeb;
+          color: #1b1b1b;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 18px;
+          box-shadow: 5px 5px 20px #a29fa0
+        }
+
+        .active, .collapsible:hover {
+            background-color: #134486;
+          color: #ffffff;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+          color: #1b1b1b;
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+        }
+
+        .active:after {
+          content: "\2212";
+        }
+
+        .content {
+          padding: 0 18px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          background-color: #f1f1f1;
+        }
+        .font{
+            
+            font-size: 50px;
+        }
